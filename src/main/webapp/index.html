@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="Author" content="Marc Lieber" />
+
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+
+<style type="text/css">
+img {
+	border: 0;
+}
+
+th {
+	text-align: left;
+}
+
+tr {
+	vertical-align: top;
+}
+</style>
+
+<title>JSP ArtWorld</title>
+</head>
+<body>
+<h1>Jena TDB ArtWorld</h1>
+	<h2>Art World ontology</h2>
+	<img src="images/LogoMakr-5kXT6J.png" alt="">
+
+	<table border="1" style="width: 60%;">
+		<tr>
+			<th >Description</th>
+			<th >Link</th>
+		</tr>
+        <tr>
+          <td>RDF Art Overview </td>
+          <td><a href="overview">ArtOverview</a>
+        </tr>
+        <tr>
+          <td>Artists report</td>
+          <td><a href="artist.jsp">artists</a>
+        </tr>
+        <tr>
+          <td>Count Triples</td>
+          <td><a href="countTriples">countTriples</a>
+        </tr>
+        <tr>
+          <td>Example Sparql queries on Fuseki</td>
+          <td><a href="sparqlQueries.html">sparqlQueries</a>
+        </tr>
+	</table>
+	
+	<br/>
+	
+	<form action="add" method="get">
+	  Enter First Number <input type="text" name="num1"/><br/>
+	  Enter Second Number <input type="text" name="num2"/><br/>
+	  <input type="submit">
+	</form>
+
+</body>
+</html>

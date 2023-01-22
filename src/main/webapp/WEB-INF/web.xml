@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>artWorldApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ArtOverview</servlet-name>
+    <servlet-class>servlets.ArtOverviewServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ArtOverview</servlet-name>
+    <url-pattern>/overview</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RDFClass</servlet-name>
+    <servlet-class>servlets.RDFClassServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RDFClass</servlet-name>
+    <url-pattern>/class</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EntityServlet</servlet-name>
+    <servlet-class>servlets.EntityServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EntityServlet</servlet-name>
+    <url-pattern>/entity</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>countTriples</servlet-name>
+    <servlet-class>apache.jena.artWorld.tdb.countTriples</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>countTriples</servlet-name>
+    <url-pattern>/countTriples</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>search in artists</description>
+    <servlet-name>artists</servlet-name>
+    <servlet-class>servlets.ArtistServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>artists</servlet-name>
+    <url-pattern>/artist</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>search list for countries</description>
+    <servlet-name>ctryServlet</servlet-name>
+    <servlet-class>servlets.ctryServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ctryServlet</servlet-name>
+    <url-pattern>/country</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <description>search list for movements</description>
+    <servlet-name>mvmtServlet</servlet-name>
+    <servlet-class>servlets.mvmtServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>mvmtServlet</servlet-name>
+    <url-pattern>/movement</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <description>HTML Header for servlets</description>
+    <servlet-name>headerServlet</servlet-name>
+    <servlet-class>servlets.headerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>headerServlet</servlet-name>
+    <url-pattern>/header</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>search list for countries</description>
+    <servlet-name>oneArtist</servlet-name>
+    <servlet-class>servlets.oneArtist</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>oneArtist</servlet-name>
+    <url-pattern>/artistForm</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
